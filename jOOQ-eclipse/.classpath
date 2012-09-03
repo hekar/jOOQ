@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="jooq-codegen-2.4.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="jooq-meta-2.4.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="joox-1.1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="miglayout-swt-4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="miglayout-core-4.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry including="**/*.java|**/*.java" kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="org,jooq.eclipse.properties.project.MainPage"
+         name="jOOQ"
+         point="org.eclipse.ui.propertyPages">
+        <page
+              class="org.jooq.eclipse.indigo.properties.project.MainProjectPropertyPage"
+              id="org,jooq.eclipse.properties.project.MainPage"
+              name="jOOQ"
+              nameFilter="*">
+           <enabledWhen>
+              <instanceof
+                    value="org.eclipse.core.resources.IProjectNature">
+              </instanceof>
+           </enabledWhen>
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.resources.refreshProviders">
+      <refreshProvider
+            class="refreshprovider.RjOOQ Pluginer1"
+            name="name">
+      </refreshProvider>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="org.jooq.eclipse.wizards"
+            name="jOOQ Plugin">
+      </category>
+      <wizard
+            category="org.jooq.eclipse.wizard"
+            class="org.jooq.eclipse.indigo.wizard.configuration.JooqConfigurationWizard"
+            icon="icons/jooq-small-alpha.gif"
+            id="org.jooq.eclipse.indigo.wizard.configuration.JooqConfigurationWizard"
+            name="jOOQ Configuration File">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="org.jooq.eclipse.indigo.editor.configuration.ConfigurationEditor"
+            contributorClass="org.jooq.eclipse.indigo.editor.configuration.ConfigurationContributorEditor"
+            extensions="xml,jooq.xml"
+            icon="icons/jooq-small-alpha.gif"
+            id="org.jooq.eclipse.indigo.editor.configuration.ConfigurationEditor"
+            name="jOOQ Configuration Editor">
+      </editor>
+   </extension>
+
+</plugin>
