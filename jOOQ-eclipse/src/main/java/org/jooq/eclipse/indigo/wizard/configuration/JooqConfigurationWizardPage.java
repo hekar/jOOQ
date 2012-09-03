@@ -27,6 +27,10 @@ import org.eclipse.ui.dialogs.ContainerSelectionDialog;
  */
 
 public class JooqConfigurationWizardPage extends WizardPage {
+	private static final String TITLE = "jOOQ Configuration File";
+	private static final String DESCRIPTION = "Create a new jOOQ Configuration file";
+	private static final String FILENAME = "config.jooq.xml";
+
 	private Text containerText;
 
 	private Text fileText;
@@ -40,8 +44,8 @@ public class JooqConfigurationWizardPage extends WizardPage {
 	 */
 	public JooqConfigurationWizardPage(ISelection selection) {
 		super("wizardPage");
-		setTitle("Multi-page Editor File");
-		setDescription("This wizard creates a new file with *.xml extension that can be opened by a multi-page editor.");
+		setTitle(TITLE);
+		setDescription(DESCRIPTION);
 		this.selection = selection;
 	}
 
@@ -109,7 +113,7 @@ public class JooqConfigurationWizardPage extends WizardPage {
 				containerText.setText(container.getFullPath().toString());
 			}
 		}
-		fileText.setText("database_configuration.xml");
+		fileText.setText(FILENAME);
 	}
 
 	/**

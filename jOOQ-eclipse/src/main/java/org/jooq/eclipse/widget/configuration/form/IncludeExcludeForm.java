@@ -29,16 +29,16 @@ public class IncludeExcludeForm extends Composite implements JooqConfigurationab
 
 	private void setupContents() {
 		client = MigLayoutFormUtils.createSection(this, "Include/Exclude Table(s)"); //$NON-NLS-1$
-		client.setLayout(new MigLayout("fillx", "[100:150:250][align left,300:400:800]", "")); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+		client.setLayout(new MigLayout("fillx", "[pref!][100%!][pref!]", "")); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 
 		Label includeLabel = MigLayoutFormUtils.createLabel(client, "Includes", "");
-		includeLabel.setLayoutData("wrap");
+		includeLabel.setLayoutData("growx, wrap");
 		includeList = new StringList(client);
 		includeList.setToolTipText(Messages.IncludeListTooltip);
 		includeList.setLayoutData("growx, wrap 15");
 
 		Label excludeLabel = MigLayoutFormUtils.createLabel(client, "Excludes", "");
-		excludeLabel.setLayoutData("wrap");
+		excludeLabel.setLayoutData("growx, wrap");
 		excludeList = new StringList(client);
 		excludeList.setToolTipText("");
 		excludeList.setLayoutData("growx, wrap 15");

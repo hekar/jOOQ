@@ -19,21 +19,21 @@ public class StringList extends Composite {
 	public StringList(Composite parent) {
 		super(parent, SWT.NONE);
 
-		setLayout(new MigLayout("fill", "", ""));
+		setLayout(new MigLayout("fill", "[50px:300px:700px][left 260px!]", ""));
 
 		list = new List(this, SWT.BORDER | SWT.MULTI |  SWT.V_SCROLL);
-		list.setLayoutData("grow, cell 1 1 1 3");
+		list.setLayoutData("grow, cell 0 0 1 3");
 
 		add = new Button(this, SWT.PUSH);
-		add.setLayoutData("cell 2 1");
+		add.setLayoutData("growx, cell 2 0 1 1");
 		add.setText("&Add");
 		edit = new Button(this, SWT.PUSH);
-		edit.setLayoutData("cell 2 2");
+		edit.setLayoutData("growx, cell 2 1 1 1");
 		edit.setText("&Edit");
 		remove = new Button(this, SWT.PUSH);
-		remove.setLayoutData("cell 2 3");
+		remove.setLayoutData("growx, cell 2 2 1 1");
 		remove.setText("&Remove");
-
+		
 		addListeners();
 	}
 
