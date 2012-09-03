@@ -6,13 +6,18 @@
          name="jOOQ"
          point="org.eclipse.ui.propertyPages">
         <page
-              class="org.jooq.eclipse.indigo.properties.project.MainProjectPropertyPage"
-              id="org,jooq.eclipse.properties.project.MainPage"
+              class="org.jooq.eclipse.indigo.property.project.MainProjectPropertyPage"
+              id="org,jooq.eclipse.property.project.MainPage"
               name="jOOQ"
               nameFilter="*">
            <enabledWhen>
               <instanceof
                     value="org.eclipse.core.resources.IProjectNature">
+              </instanceof>
+           </enabledWhen>
+           <enabledWhen>
+              <instanceof
+                    value="org.eclipse.core.resources.IProject">
               </instanceof>
            </enabledWhen>
       </page>

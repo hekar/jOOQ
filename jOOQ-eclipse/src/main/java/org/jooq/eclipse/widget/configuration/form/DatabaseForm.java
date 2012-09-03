@@ -1,4 +1,4 @@
-package org.jooq.eclipse.indigo.wizard.configuration;
+package org.jooq.eclipse.widget.configuration.form;
 
 import net.miginfocom.swt.MigLayout;
 

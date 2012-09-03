@@ -3,10 +3,8 @@ package org.jooq.eclipse.widget.configuration.form;
 import net.miginfocom.swt.MigLayout;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.ui.forms.widgets.Section;
 import org.jooq.eclipse.config.JooqConfiguration;
 import org.jooq.eclipse.config.JooqConfigurationable;
 import org.jooq.eclipse.widget.util.MigLayoutFormUtils;

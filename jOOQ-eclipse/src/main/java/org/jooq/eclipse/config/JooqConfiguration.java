@@ -3,12 +3,10 @@ package org.jooq.eclipse.config;
 import static org.joox.JOOX.$;
 
 import java.io.File;
-import java.io.IOException;
 import java.io.Serializable;
 
 import org.joox.Match;
 import org.w3c.dom.Document;
-import org.xml.sax.SAXException;
 
 public class JooqConfiguration implements Serializable {
 	private static final long serialVersionUID = -3022156606566326047L;
@@ -56,7 +54,7 @@ public class JooqConfiguration implements Serializable {
 			c.setExcludes(database.find("exclude").content());
 			c.setInputSchema(database.find("inputSchema").content());
 
-			Match generate = $(document).find("generate").first();
+			//Match generate = $(document).find("generate").first();
 
 			Match target = $(document).find("target").first();
 			c.setPackageName(target.find("packageName").content());

@@ -1,7 +1,6 @@
 package org.jooq.eclipse.widget.configuration;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -9,7 +8,6 @@ import java.util.Map.Entry;
 
 import org.eclipse.jface.viewers.ComboViewer;
 import org.eclipse.swt.widgets.Composite;
-import org.eclipse.ui.dialogs.ListSelectionDialog;
 
 public class DatabaseCombobox extends ComboViewer {
 

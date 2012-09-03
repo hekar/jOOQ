@@ -23,8 +23,7 @@ import org.eclipse.ui.editors.text.TextEditor;
 import org.eclipse.ui.ide.IDE;
 import org.eclipse.ui.part.FileEditorInput;
 import org.eclipse.ui.part.MultiPageEditorPart;
-
-import sun.reflect.ReflectionFactory.GetReflectionFactoryAction;
+import org.jooq.eclipse.widget.configuration.ConfigurationPropertiesPage;
 
 public class ConfigurationEditor extends MultiPageEditorPart implements IResourceChangeListener {
 

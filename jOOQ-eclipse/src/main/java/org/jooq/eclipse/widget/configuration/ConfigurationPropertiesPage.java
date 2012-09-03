@@ -1,4 +1,4 @@
-package org.jooq.eclipse.indigo.editor.configuration;
+package org.jooq.eclipse.widget.configuration;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -11,8 +11,8 @@ import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.jooq.eclipse.config.JooqConfiguration;
 import org.jooq.eclipse.config.JooqConfigurationable;
-import org.jooq.eclipse.indigo.wizard.configuration.DatabaseForm;
 import org.jooq.eclipse.widget.configuration.form.CodegenForm;
+import org.jooq.eclipse.widget.configuration.form.DatabaseForm;
 import org.jooq.eclipse.widget.configuration.form.IncludeExcludeForm;
 import org.jooq.eclipse.widget.configuration.form.JdbcDriverForm;
 import org.jooq.eclipse.widget.configuration.form.TargetForm;

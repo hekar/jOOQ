@@ -17,10 +17,10 @@ public class MigLayoutFormUtils {
 		checkBox.setText(labelText);
 		checkBox.setToolTipText(tooltip);
 		checkBox.setLayoutData("wrap 15");
-		
+
 		return checkBox;
 	}
-	
+
 	/**
 	 * Create a label + text field + button.
 	 * 
@@ -95,9 +95,9 @@ public class MigLayoutFormUtils {
 		return label;
 	}
 
-	
 	/**
 	 * Create a section and return a composite to add children
+	 * 
 	 * @param parent
 	 * @return
 	 */

@@ -1,8 +1,6 @@
 package org.jooq.eclipse.indigo.property.project;
 
-import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IProjectNature;
-import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.IAdaptable;
 import org.eclipse.jface.preference.PreferencePage;
 import org.eclipse.swt.SWT;
@@ -11,7 +9,6 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.dialogs.PropertyPage;
 
 public class MainProjectPropertyPage extends PropertyPage {
@@ -33,9 +30,14 @@ public class MainProjectPropertyPage extends PropertyPage {
 		pathLabel.setText(PATH_TITLE);
 
 		// Path text field
-		Text pathValueText = new Text(composite, SWT.WRAP | SWT.READ_ONLY);
-		pathValueText.setText(((IResource) getElement()).getFullPath()
-				.toString());
+		// Text pathValueText = new Text(composite, SWT.WRAP | SWT.READ_ONLY);
+		//
+		// IAdaptable element = getElement();
+		// if (element instanceof IResource) {
+		// IResource resource = (IResource) element;
+		// } else if (element instanceof IProjectNature) {
+		// IProjectNature resource = (IProjectNature) element;
+		// }
 	}
 
 	/**
@@ -73,11 +75,11 @@ public class MainProjectPropertyPage extends PropertyPage {
 
 	public boolean performOk() {
 		// setup the jOOQ xml file
-		IAdaptable element = getElement();
 		
-		IProjectNature projectNature = (IProjectNature) element;
-		//IProject project = projectNature.getProject();
-		
+		// IAdaptable element = getElement();
+		// IProjectNature projectNature = (IProjectNature) element;
+		// IProject project = projectNature.getProject();
+
 		return true;
 	}
 
